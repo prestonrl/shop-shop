@@ -6,7 +6,8 @@
 
 Shop Shop is a MERN stack e-commerce shop built with Stripe API. Intitially built with React's Context API, but refactored to utilize Redux. [Deployed](https://prl-shop-shop.herokuapp.com/)
 
-![image]()
+![image](https://user-images.githubusercontent.com/70044796/115158197-47f20700-a04a-11eb-942e-3aab73beaffe.png)
+
 
 
 ## Contents
@@ -17,13 +18,18 @@ Shop Shop is a MERN stack e-commerce shop built with Stripe API. Intitially buil
 <br />
 
 ## Usage
-- Displays 6 web development projects I have worked on in the portfolio section. Gives overview of who I am and how to contact me.
+The deployed application displays various items that could be sold online. Users are able to login, save these items to a cart that persists, and checkout using the Stripe portal.
 
 ## Built With
 * Node.js
-* Express.js
+* Appollo
 * JavaScript
 * React
+* Stripe
+* Graphql
+* Redux
+* Heroku
+
 
 <br />
 

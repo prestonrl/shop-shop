@@ -5,7 +5,6 @@ import './style.css';
 import { useStoreContext } from '../../utils/GlobalState';
 import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
-import { TOGGLE_CART } from '../../utils/actions';
 import { QUERY_CHECKOUT } from '../../utils/queries';
 import { loadStripe } from '@stripe/stripe-js';
 import { useLazyQuery } from '@apollo/react-hooks';
@@ -23,17 +22,6 @@ const Cart = () => {
             })
         }
     }, [data]);
-
-    useEffect(() => {
-        async function getCart() {
-            const cart = await idbPromise('cart', 'get');
-            dispatch({ type: ADD_MULTIPLE_TO_CART, products: [...cart] });
-        };
-
-        if (!state.cart.length) {
-            getCart();
-        }
-    }, [state.cart.length, dispatch]);
 
     useEffect(() => {
         async function getCart() {
